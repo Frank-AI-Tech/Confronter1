@@ -2,7 +2,6 @@ services:
   - type: web
     name: Toxic-MD
     env: docker
-    region: Singapore
     plan: free
     buildCommand: "npm install"
     dockerfilePath: ./Dockerfile

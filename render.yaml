@@ -5,7 +5,6 @@ services:
     region: Singapore
     plan: free
     buildCommand: "npm install"
-    startCommand: "node index.js"
     dockerfilePath: ./Dockerfile
     repo: https://github.com/xhclintohn/Toxic-Md
     autoDeploy: true

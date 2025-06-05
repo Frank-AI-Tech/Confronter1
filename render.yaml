@@ -5,7 +5,7 @@ services:
     plan: free
     buildCommand: "npm install"
     dockerfilePath: ./Dockerfile
-    repo: https://github.com/xhclintohn/Toxic-Md
+    repo: https://github.com/Frank-AI-Tech/Toxic-Md
     autoDeploy: true
     envVars:
       - key: SESSION_ID

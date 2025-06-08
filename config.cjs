@@ -22,7 +22,7 @@ const config = {
   NOT_ALLOW: process.env.NOT_ALLOW !== undefined ? process.env.NOT_ALLOW === "true" : false, // Disabled
   MODE: process.env.MODE || "public", // Enabled
   BOT_NAME: process.env.BOT_NAME || "ÐEAD-MD",
-  MENU_IMAGE: process.env.MENU_IMAGE || "https://files.catbox.moe/7l1tt5.jpg",
+  MENU_IMAGE: process.env.MENU_IMAGE || "http://ibb.co/svpnQNst",
   DESCRIPTION: process.env.DESCRIPTION || "Savage WhatsApp Bot by Toxic-Master",
   OWNER_NAME: process.env.OWNER_NAME || "CONFRONTER",
   OWNER_NUMBER: process.env.OWNER_NUMBER || "254796283064",

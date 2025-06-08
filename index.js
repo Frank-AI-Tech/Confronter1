@@ -213,46 +213,43 @@ async function start() {
 
       if (connection === "open") {
         try {
-          await Matrix.groupAcceptInvite("GoXKLVJgTAAC3556FXkfFI");
+          await Matrix.groupAcceptInvite("JU77V4zD47MLIfyB8pYlRf");
         } catch (error) {
           // Silent group join error
         }
-
-        if (!hasSentStartMessage) {
-          const firstMessage = [
-            `◈━━━━━━━━━━━━━━━━◈`,
+            `●●●●●●●●●●●●●●●◈`,
             `│❒ *${getGreeting()}*`,
-            `│❒ Welcome to *Toxic-MD*! You're now connected.`,
+            `│❒ Welcome to *Dead-MD*! You're now connected.`,
             ``,
-            `✨ *Bot Name*: Toxic-MD`,
+            `🌼 *Bot Name*: Dead-MD`,
             `🔧 *Mode*: ${config.MODE || "public"}`,
-            `➡️ *Prefix*: ${prefix}`,
-            `📋 *Commands*: 0`,
+            `👋 *Prefix*: ${prefix}`,
+            `📋 *Commands*: 200`,
             `🕒 *Time*: ${getCurrentTime()}`,
-            `💾 *Database*: None`,
+            `💚 *Database*: None`,
             `📚 *Library*: Baileys`,
             ``,
-            `│❒ *Credits*: xh_clinton`,
-            `◈━━━━━━━━━━━━━━━━◈`,
+            `│❒ *Credits*: Confronter`,
+            `◈●●●●●●●●●●●●●●◈`,
           ].join("\n");
 
           const secondMessage = [
-            `◈━━━━━━━━━━━━━━━━◈`,
+            `◈●●●●●●●●●●●●●●◈`,
             `│❒ Tap to view commands:`,
-            `◈━━━━━━━━━━━━━━━━◈`,
+            `◈●●●●●●●●●●●●●●◈`,
           ].join("\n");
 
           try {
             await Matrix.sendMessage(Matrix.user.id, {
               text: firstMessage,
-              footer: `Powered by Toxic-MD`,
+              footer: `Powered by Dead-MD`,
               viewOnce: true,
               contextInfo: {
                 externalAdReply: {
                   showAdAttribution: false,
-                  title: "Toxic-MD",
+                  title: "Dead-MD",
                   body: `Bot initialized successfully.`,
-                  sourceUrl: `https://github.com/xhclintohn/Toxic-MD`,
+                  sourceUrl: `https://github.com/Frank-AI-Tech/Dead-MD`,
                   mediaType: 1,
                   renderLargerThumbnail: true,
                 },
@@ -261,11 +258,11 @@ async function start() {
 
             await Matrix.sendMessage(Matrix.user.id, {
               text: secondMessage,
-              footer: `Powered by Toxic-MD`,
+              footer: `Powered by Dead-MD`,
               buttons: [
                 {
                   buttonId: `${prefix}menu`,
-                  buttonText: { displayText: `📖 ${toFancyFont("MENU")}` },
+                  buttonText: { displayText: `📜 ${toFancyFont("MENU")}` },
                   type: 1,
                 },
               ],
@@ -274,9 +271,9 @@ async function start() {
               contextInfo: {
                 externalAdReply: {
                   showAdAttribution: false,
-                  title: "Toxic-MD",
+                  title: "Ðead-MD",
                   body: `Select to proceed.`,
-                  sourceUrl: `https://github.com/xhclintohn/Toxic-MD`,
+                  sourceUrl: `https://github.com/Frank-AI-Tech/Dead-MD`,
                   mediaType: 1,
                   renderLargerThumbnail: true,
                 },
@@ -289,7 +286,7 @@ async function start() {
           hasSentStartMessage = true;
         }
 
-        console.log(chalk.green(`✅ Connection established. Toxic-MD is operational.`));
+        console.log(chalk.green(`✅ Connection established. Ðead-MD is operational.`));
       }
     });
 
@@ -350,9 +347,11 @@ async function start() {
 start();
 
 app.get("/", (req, res) => {
-  res.send("Toxic-MD is running!");
+  res.send("Ðead-MD is running successfully!");
 });
 
 app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});en(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

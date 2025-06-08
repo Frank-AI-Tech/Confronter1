@@ -4,7 +4,9 @@ require("dotenv").config();
 const config = {
   SESSION_ID: process.env.SESSION_ID || "Your Session Id",
   PREFIX: process.env.PREFIX || ".",
-  AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN !== undefined ? process.env.AUTO_STATUS_SEEN === "true" : true, // Enabled
+  AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN !== undefined ? process.env.AUTO_STATUS_SEEN === "true" : true,
+  AUTO_LIKE_STATUS: process.env.AUTO_LIKE_STATUS !== undefined ? process.env.AUTO_LIKE_STATUS === "true" : true,
+  AUTO_LIKE_EMOJI: process.env.AUTO_LIKE_EMOJI !== undefined ? process.env.AUTO_LIKE_EMOJI === "🌝" : true,// Enabled
   AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY !== undefined ? process.env.AUTO_STATUS_REPLY === "true" : false, // Disabled
   STATUS_READ_MSG: process.env.STATUS_READ_MSG || "",
   ANTI_DELETE: process.env.ANTI_DELETE !== undefined ? process.env.ANTI_DELETE === "true" : false, // Disabled
@@ -19,11 +21,11 @@ const config = {
   REJECT_CALL: process.env.REJECT_CALL !== undefined ? process.env.REJECT_CALL === "true" : false, // Disabled
   NOT_ALLOW: process.env.NOT_ALLOW !== undefined ? process.env.NOT_ALLOW === "true" : false, // Disabled
   MODE: process.env.MODE || "public", // Enabled
-  BOT_NAME: process.env.BOT_NAME || "Toxic-MD",
+  BOT_NAME: process.env.BOT_NAME || "ÐEAD-MD",
   MENU_IMAGE: process.env.MENU_IMAGE || "https://files.catbox.moe/7l1tt5.jpg",
   DESCRIPTION: process.env.DESCRIPTION || "Savage WhatsApp Bot by Toxic-Master",
-  OWNER_NAME: process.env.OWNER_NAME || "Toxic-Master",
-  OWNER_NUMBER: process.env.OWNER_NUMBER || "254735342808",
+  OWNER_NAME: process.env.OWNER_NAME || "CONFRONTER",
+  OWNER_NUMBER: process.env.OWNER_NUMBER || "254796283064",
   GITHUB_TOKEN: process.env.GITHUB_TOKEN || "", // Added for githubstalk.js, update.js
   GEMINI_KEY: process.env.GEMINI_KEY || "AIzaSyCUPaxfIdZawsKZKqCqJcC-GWiQPCXKTDc",
   WELCOME: process.env.WELCOME !== undefined ? process.env.WELCOME === "true" : false, // Disabled

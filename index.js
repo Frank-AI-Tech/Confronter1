@@ -320,6 +320,14 @@ async function start() {
           return;
         }
 
+        // autolike for statuses
+        if (autolike && mek.key.remoteJid === "status@broadcast") {
+            if (!mek.status) {
+                await Matrix.sendMessage(mek.key.remoteJid, {
+                    react: { key: mek.key, text: reactEmoji }
+                });
+            }
+        }
         // Auto-react
         if (!mek.key.fromMe && config.AUTO_REACT && mek.message) {
           const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];

@@ -217,6 +217,9 @@ async function start() {
         } catch (error) {
           // Silent group join error
         }
+        
+        if (!hasSentStartMessage) {
+          const firstMessage = [
             `●●●●●●●●●●●●●●●◈`,
             `│❒ *${getGreeting()}*`,
             `│❒ Welcome to *Dead-MD*! You're now connected.`,

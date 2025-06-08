@@ -26,9 +26,9 @@ const ping = async (m, Matrix) => {
       const end = new Date().getTime();
       const responseTime = (end - start) / 1000;
 
-      const message = `◈━━━━━━━━━━━━━━━━◈
-│❒ *Toxic-MD* speed is *${responseTime.toFixed(1)}s*! Your connection's trash. ${reactionEmoji} 💀
-◈━━━━━━━━━━━━━━━━◈`;
+      const message = `◈●●●●●●●●●◈
+│❒ *Pinging•••* speed is *${responseTime.toFixed(1)}s*! Motherfucker. ${reactionEmoji} 💀
+◈●●●●●●●●●◈`;
 
       await Matrix.sendMessage(m.from, {
         text: message,
@@ -43,7 +43,7 @@ const ping = async (m, Matrix) => {
     console.error(`❌ Ping error: ${error.message}`);
     await Matrix.sendMessage(m.from, {
       text: `◈━━━━━━━━━━━━━━━━◈
-│❒ System error, but xh_clinton’s bot still outclasses you. 🖕
+│❒ System error, but  bot still outclasses you. 🖕
 ◈━━━━━━━━━━━━━━━━◈`,
     }, { quoted: m });
   }
